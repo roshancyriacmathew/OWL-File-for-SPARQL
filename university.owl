@@ -1,0 +1,1030 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2021/1/university#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2021/1/university"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university">
+        <rdfs:comment xml:lang="en">Indicates the ontology university</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/image -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#admits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#admits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Admissions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#enrolledFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#enrolledFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#isStudentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#isStudentOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#programCoordinator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#programCoordinator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#providesPlacement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#providesPlacement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Placement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#teaches"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#hasCredit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#hasCredit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#joinedOn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#joinedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration"/>
+        <rdfs:comment xml:lang="en">Responsible for academic activities of the various courses</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Management"/>
+        <rdfs:comment xml:lang="en">Governs and manges the academic department.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Management"/>
+        <rdfs:comment xml:lang="en">Responsible for the overall management of the university including student support, hostel, transportation, bringing companies and PRO activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#AdmissionSupport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#AdmissionSupport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Admissions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Admissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Admissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Management"/>
+        <rdfs:comment xml:lang="en">Responsible for admission of students in the university</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#AdmissionsDirector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#AdmissionsDirector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Admissions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#AsstntProfessor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#AsstntProfessor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Councellor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Councellor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dean">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DepartmentHead"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#DepartmentHead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#DepartmentHead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#University"/>
+        <rdfs:comment xml:lang="en">Indicates the different types of courses available at the university</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#GuestLecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#GuestLecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Hostel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Hostel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#LabStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#LabStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Librarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Librarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff"/>
+        <rdfs:comment xml:lang="en">Responsible for management activities of the college</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PRO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PRO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Phd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Phd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <schema:image rdf:resource="https://upload.wikimedia.org/wikipedia/commons/0/0b/Graduate_clip_art.png"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Placement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Placement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Principal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Principal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#University"/>
+        <rdfs:comment xml:lang="en">Indicates the different types of staff working in a university.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#University"/>
+        <rdfs:comment xml:lang="en">Indicated the different types of student studying in the college</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#StudentService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#StudentService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Tutor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Tutor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#AcademicManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#UG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#UG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <schema:image rdf:resource="https://static.thenounproject.com/png/2484273-200.png"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#EducationLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#University">
+        <schema:image rdf:resource="https://upload.wikimedia.org/wikipedia/commons/5/57/Draw_School.png"/>
+        <rdfs:comment xml:lang="en">Denotes the main class university which provides different courses to students at different academic levels.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Alexa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Alexa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MBA_finance"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexa</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-02T16:00:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1020</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Artificial_Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Artificial_Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+        <schema:image rdf:resource="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_960_720.jpg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Austyn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Austyn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_MechEngineering"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mechanical_Engineering"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Austyn</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-02T09:30:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1012</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_CS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_EE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_EE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_Mech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_Mech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_Psycology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_Psycology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_phylosophy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_phylosophy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#UnderGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Bruce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Bruce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+        <programCoordinator rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Physics"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Physics"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruce</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-02T08:00:00</joinedOn>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T110</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Computer_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Computer_Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Computer_Vision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Computer_Vision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Data_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Data_Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_ML"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mechanical_Engineering"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1200</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dave</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-07T11:30:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1030</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dierdrie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dierdrie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Academic"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Electrical_Engineering"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_ElectricalEngineering"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dierdrie</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-02T09:30:12</joinedOn>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_CS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_ML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_ML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_arts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_arts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#DiplomaCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Electrical_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Electrical_Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Finance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Finance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Gwen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Gwen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Physics"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Physics"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gwen</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-05T09:30:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1003</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Harve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Harve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Placement"/>
+        <providesPlacement rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#StarkUniverisity"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harve</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-01T10:00:00</joinedOn>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Jena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Jena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#BE_AI"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Artificial_Intelligence"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Computer_Science"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">700</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jena</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-20T14:30:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2000</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Joe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Joe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Artificial_Intelligence"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dip_AI"/>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-02T09:10:30</joinedOn>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MBA_HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MBA_HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MBA_finance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MBA_finance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_ElectricalEngineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_ElectricalEngineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_MechEngineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_MechEngineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Physics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Physics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_psycology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_psycology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#PostGraduateCourse"/>
+        <rdfs:label xml:lang="en">MSc_Psychology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Mechanical_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mechanical_Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Ned -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Ned">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Physics"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Physics"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2200</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ned</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-02T10:00:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1001</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Nevada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Nevada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_management"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1750</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nevada</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-20T11:30:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1500</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Peter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Peter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_AI"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Artificial_Intelligence"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Mathematics"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2640</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-03T09:10:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1000</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_Mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_Psycology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_Psycology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse"/>
+        <rdfs:label xml:lang="en">PhD_Psychology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_computerVision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#PhD_computerVision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#ResearchCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Physics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Physics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Psycology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Psycology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Subjects"/>
+        <rdfs:label xml:lang="en">Psychology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Sophia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Sophia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Admissions"/>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-03T08:00:00</joinedOn>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1401</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#StarkUniverisity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#StarkUniverisity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#University"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Alexa"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Austyn"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dave"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Gwen"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Jena"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Joe"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Ned"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Nevada"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Peter"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Summer"/>
+        <admits rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Wanda"/>
+        <employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Bruce"/>
+        <employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Dierdrie"/>
+        <employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Harve"/>
+        <employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Sophia"/>
+        <employs rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Tony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Summer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Summer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_Physics"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Physics"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">750</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Summer</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-02T10:10:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1200</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Tony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Tony">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Staff"/>
+        <programCoordinator rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#MSc_AI"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Artificial_Intelligence"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tony</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-01T08:00:00</joinedOn>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T100</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2021/1/university#Wanda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2021/1/university#Wanda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Student"/>
+        <enrolledFor rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#BSc_Psycology"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2021/1/university#Psycology"/>
+        <hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1260</hasCredit>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanda</hasName>
+        <joinedOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-10T10:00:00</joinedOn>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1010</studentID>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
